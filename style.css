@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300&display=swap');
+
+* { margin: 0; padding: 0; }
+
+#container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#map { width: 75%; height: 100vh; }
+
+#sideBar {
+    width: 25%;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 32%, rgba(0,212,255,1) 100%);
+    -webkit-box-shadow: 10px 0px 5px 0px rgba(122,122,122,1);
+    -moz-box-shadow: 10px 0px 5px 0px rgba(122,122,122,1);
+    box-shadow: 10px 0px 5px 0px rgba(122,122,122,1);
+}
+
+#sideBar > span {
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    padding: 5rem 0 0 0;
+}
+
+#allItems {
+    margin: 3rem auto;
+}
+
+#allItems .item {
+    width: 70%; 
+    height: auto;
+    font-size: 22px;
+    margin: 1rem auto;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 1rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(61deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+}
+
+#allItems .item:hover {
+    transform: translateY(-5px);
+}
